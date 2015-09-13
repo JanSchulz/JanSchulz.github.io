@@ -1,0 +1,47 @@
+###########
+# site.title, site.url, site.author.name
+
+title:   'A blog about technical stuff'
+author:  
+  name:  'Jan Schulz'
+  # squared, 120px or 240px picture -> used as 120px
+  picture: https://avatars2.githubusercontent.com/u/890156?v=3&s=240
+
+  # Short bio or description (displayed in the header)
+description: PhD student @ TU Freiberg (bibliometrics, academic research productivity, social networks, social capital) | Python enthusiast (knitpy, pandas, statsmodels, matplotlib, ggplot) | <a href="http://www.katzien.de">Private homepage (de)</a>
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  github: janschulz
+  twitter: janschulz
+  email: jasc@gmx.net
+  
+
+## note: 
+#  use site.path in your templates to make it work for both protocols e.g. http and https
+#  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
+path: ''
+url:  'http://janschulz.github.io'
+
+
+########
+# more settings
+
+markdown: kramdown
+
+sass:
+  sass_dir: css
+  style:    expanded
+
+permalink: /:title.html
+
+exclude:
+- README.md
+
+
+safe: true
+lsi: false
+
+gems:
+  # @names become github links
+  - jekyll-mentions

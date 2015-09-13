@@ -1,0 +1,19 @@
+---
+layout: default
+title: Welcome to my GitHub Pages
+---
+
+{% for post in site.posts %}
+
+<article class='post'>
+  <h2 class='post-title'>
+    <a href="{{ site.path }}{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </h2>
+  <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+  {{ post.content }}
+</article>
+
+{% endfor %}
+

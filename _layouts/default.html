@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ site.title }}</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pygment_trac.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>{{ site.title }}</h1>
+        {% if site.author.picture %}<p style="text-align: center;"><img class="img-circle center" src="{{ site.author.picture }}" height=120 width=120></br><strong>{{ site.author.name }}</strong></p>{% endif %}
+        {% if site.description %}<p>{{ site.description }}</p>{% endif %}
+        {% include svg-icons.html %} 
+        <p><a href="{{ site.path }}/archive.html">Archive</a> | <a href="{{ site.path }}/feed.xml"></i>RSS</a></p>
+      </header>
+      <section>
+  {{ content }}
+      </section>
+      <footer>
+        <p><small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> | Powered by Jekyll | Hosted on GitHub Pages | Theme based on <a href="https://github.com/orderedlist/minimal/">minimal</a> by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-358046-2', 'auto');
+    ga('send', 'pageview');
+
+   </script>
+  </body>
+</html>
