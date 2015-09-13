@@ -6,7 +6,8 @@ author:
   name:  'Jan Schulz'
   # squared, 120px or 240px picture -> used as 120px
   picture: https://avatars2.githubusercontent.com/u/890156?v=3&s=240
-
+  twitter: janschulz
+  
   # Short bio or description (displayed in the header)
 description: PhD student @ TU Freiberg (bibliometrics, academic research productivity, social networks, social capital) | Python enthusiast (knitpy, pandas, statsmodels, matplotlib, ggplot) | <a href="http://www.katzien.de">Private homepage (de)</a>
 
