@@ -28,8 +28,13 @@ url:  'http://janschulz.github.io'
 ########
 # more settings
 
-markdown: kramdown
-
+#markdown: kramdown
+# get Github style markdown with fenced code blocks and highlighting
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+highlighter: pygments
+  
 sass:
   sass_dir: css
   style:    expanded
