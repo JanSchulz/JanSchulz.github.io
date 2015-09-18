@@ -53,4 +53,4 @@ Example:
 ('result.0.name', 'Jan Schulz')
 ```
 
-Someone might find this usefull (and at least I find it again :-) )
+Someone might find this useful (and at least I can find it again :-) )
