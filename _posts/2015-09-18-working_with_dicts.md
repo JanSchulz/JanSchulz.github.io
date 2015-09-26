@@ -127,8 +127,10 @@ Examples:
 ```python
 data = {"ID1":{"result":{"name":"Jan Schulz"}},
         "ID2":{"result": {"name":"Another name", "bday":"1.1.2000"}}}
-print(find_in_structure(data, "Schulz"), get_from_structure(data, find_in_dict(data, "Schulz")))
-## ID1.result.name Jan Schulz
+print(find_in_structure(data, "Schulz"))
+## ID1.result.name 
+print(get_from_structure(data, find_in_structure(data, "Schulz")))
+## Jan Schulz
 ```
 
 And the DataFrame conversion

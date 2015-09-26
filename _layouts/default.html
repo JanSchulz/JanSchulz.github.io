@@ -16,7 +16,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>{{ site.title }}</h1>
+        <h1><a href="/">{{ site.title }}</a></h1>
         {% if site.author.picture %}<p style="text-align: center;"><img class="img-circle center" src="{{ site.author.picture }}" height=120 width=120></br><strong>{{ site.author.name }}</strong></p>{% endif %}
         {% if site.description %}<p>{{ site.description }}</p>{% endif %}
         {% include svg-icons.html %} 
