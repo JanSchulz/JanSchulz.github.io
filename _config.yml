@@ -8,13 +8,14 @@ author:
   picture: https://avatars2.githubusercontent.com/u/890156?v=3&s=240
   twitter: janschulz
   
-  # Short bio or description (displayed in the header)
-description: PhD student @ TU Freiberg (bibliometrics, academic research productivity, social networks, social capital) | Python enthusiast (knitpy, pandas, statsmodels, matplotlib, ggplot) | <a href="http://www.katzien.de">Private homepage (de)</a>
+ # Short bio or description (displayed in the header)
+description: PhD student @ TU Freiberg (bibliometrics, academic research productivity, social networks, social capital) | Python enthusiast (<a href="https://github.com/janschulz/knitpy">knitpy</a>, pandas, statsmodels, matplotlib, ggplot, <a href="github.com/bebraw/pypandoc/">pypandoc</a>) | <a href="http://www.katzien.de">Private homepage (de)</a>
 
 # Includes an icon in the footer for each username you enter
 footer-links:
   github: janschulz
   twitter: janschulz
+  linkedin: schulzjan
   email: jasc@gmx.net
   
 
@@ -48,6 +49,6 @@ exclude:
 safe: true
 lsi: false
 
-gems:
-  # @names become github links
-  - jekyll-mentions
+#gems:
+  # @names become github links -- playes bad with `@twine...` lines in batch code examples
+#  - jekyll-mentions
