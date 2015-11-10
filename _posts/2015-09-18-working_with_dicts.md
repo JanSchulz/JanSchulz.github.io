@@ -6,7 +6,9 @@ comments: True
 
 I recently had to explore a JSON API and came up with the following ~~two~~three functions to make working with the returned JSON/dict easier:
 
-[code updated on 20150926: updates to old code and new convert_to_dataframe_input function]
+[Update 2015-11-10: you might like [dripper](https://github.com/hirokiky/dripper), which does much of this code snippet...]
+
+[Update 2015-09-26: updates to code and new convert_to_dataframe_input function: see [here]({% post_url 2015-09-26-working_with_structures %}) for a post about it]
 
 ```python
 _null = object()
