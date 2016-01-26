@@ -3,8 +3,8 @@
 body {
   padding:30px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
-  font-weight:300;
+  color:#555;
+  font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,19 +30,24 @@ a {
   text-decoration:none;
 }
 
+h2 a {
+  /* The link in the headline of the start page... */ 
+  font-weight: bold;
+}
+
 a:hover {
   color:#069;
 }
 
 a small {
   font-size:11px;
-  color:#777;
+  color:#555;
   margin-top:-0.6em;
   display:block;
 }
 
 a:hover small {
-  color:#777;
+  color:#555;
 }
 
 .wrapper {
