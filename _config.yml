@@ -31,10 +31,11 @@ url:  'http://janschulz.github.io'
 
 #markdown: kramdown
 # get Github style markdown with fenced code blocks and highlighting
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
-highlighter: pygments
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+#highlighter: pygments
   
 sass:
   sass_dir: css
