@@ -6,7 +6,7 @@ comments: True
 
 Since a few years, pipelines (via `%>%` of the [magrittr package](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html)) are quite popular in R and the grown ecosystem of the ["tidyverse"](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/) is built around pipelines. Having tried both the pandas syntax (e.g. chaining like `df.groupby().mean()` or plain `function2(function1(input))`) and the R's pipeline syntax, I have to admit that I like the pipeline syntax a lot more.
 
-In my opinion the strength of R's pipeline syntax is:
+In my opinion the strengths of R's pipeline syntax are:
 
 * The **same verbs can be used for different inputs** (there are [SQL backends for dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/new-sql-backend.html)), thanks to R's single-dispatch mechanism (called [S3 objects](http://adv-r.had.co.nz/S3.html)). 
 * Thanks to **using function** instead of class methods, it's also more easily extendable (for a new method on `pandas.DataFrame` you have to add that to the pandas repository or you need to use monkey patching). Fortunatelly, both functions and singledispatch are also available in python :-)
@@ -95,7 +95,7 @@ def append_col_df(input, x = 1):
     copy["X"] = x
     return copy
 
-# ensure that pd.DataFrame is useable as a pipe source
+# ensure that pd.DataFrame is usable as a pipe source
 make_pipesource(pd.DataFrame)
 ```
 
@@ -149,7 +149,7 @@ except NotImplementedError as e:
     append_col is not implemented for data of type <class 'int'>
     
 
-### A more complex example: grouped and ungrouped aggregation on a pandas DataFrame
+### A more complex example: grouped and ungrouped aggregation on DataFrames
 
 `singledispatch` also makes it easy to work with grouped and ungrouped `pd.DataFrame`s:
 
@@ -210,19 +210,20 @@ print(df >> groupby("b") >> summarize_mean())
 ### Limitiations
 
 Compared to R's implementation in the [magrittr](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html) package, 
-`input >> verb(x)` can't be used as `verb(input, x)`. 
+`input >> verb(x)` can't be rewritten as `verb(input, x)`.
 
 The problem here is that `verb(x)` under the hood constructs a helper object (`PipeVerb`) which 
 is used in the rshift operation. At the time of calling `verb(...)`, we can't always be sure 
-whether we want an object which can be used in the pipeline or already
+whether we want an object which can be used in the pipeline or want to already
 compute the result. As an example consider a verb `merge(*additional_data)`. You could call
 that as `data >> merge(first, second)` to indicate that you want all three (`data`,
 `first`, and `second`) merged. On the other hand, `merge(first, second)` is also valid
 ("merge `first` and `second` together).
 
 ### Usage as function and pipeline verb
+
 To help work around this problem, the convenience decorator `singledispatch_pipeverb` is actually not the best option if 
-you want to create reuseable pipline verbs. Instead, the `singledispatch_pipeverb` decorator is also available in
+you want to create reusable pipeline verbs. Instead, the `singledispatch_pipeverb` decorator is also available in
 two parts, so that one can both expose the original function (with `singledispatch` enabled) and the
 final pipeline verb version:
 
