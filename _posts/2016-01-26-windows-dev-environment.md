@@ -182,12 +182,12 @@ I use [Cadair/jupyter_environment_kernels](https://github.com/Cadair/jupyter_env
 
 #### Add-ons for jupyter notebook
 
-I install the (jupyter notebook extensions](https://github.com/ipython-contrib/IPython-notebook-extensions) (installed in the `jupyter-notebook` conda environment), mainly for the Table of Content support.
+I install the [jupyter notebook extensions](https://github.com/ipython-contrib/IPython-notebook-extensions) (installed in the `jupyter-notebook` conda environment), mainly for the Table of Content support.
 
 I also add some ipython magic commands to each python environment which is used as notebook kernel:
 
-* (IPython-extensions)[https://github.com/ipython-contrib/IPython-extensions]: for `%%inactive` (don't execute a cell in e.g. a "Run all Cells") and `%%writeandexecute` (enable [code reuse from one notebook to another](https://ipython-extensions.readthedocs.org/en/latest/magics.html#cellmagic-writeandexecute)).
-* (watermark)[https://github.com/rasbt/watermark]: for `%watermark`, which outputs some version information to make notebooks reproducible. 
+* [IPython-extensions](https://github.com/ipython-contrib/IPython-extensions): for `%%inactive` (don't execute a cell in e.g. a "Run all Cells") and `%%writeandexecute` (enable [code reuse from one notebook to another](https://ipython-extensions.readthedocs.org/en/latest/magics.html#cellmagic-writeandexecute)).
+* [watermark](https://github.com/rasbt/watermark): for `%watermark`, which outputs some version information to make notebooks reproducible. 
 
 #### proper diffs and commits for notebooks
 
