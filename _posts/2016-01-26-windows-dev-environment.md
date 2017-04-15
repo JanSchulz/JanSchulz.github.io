@@ -156,7 +156,7 @@ The following are the relevant lines of my `%USERPROFILE%\.gitconfig`:
     # specially for word files which are shown as text in the latest git for windows 2.x builds
     wd = diff --word-diff
 
- ```
+```
 
 I also install [git-extras](https://github.com/tj/git-extras/blob/master/Commands.md), mainly for `git pr` (checkout a github PR directly from origin), `git ignore`, `git changelog`
 
