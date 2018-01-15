@@ -1,2 +1,2 @@
-# JanSchulz.github.io
-[Jan Schulz -- a blog about technical stuff](http://janschulz.github.io/)
+# jankatins.github.io
+[Jan Katins -- a blog about technical stuff](http://jankatins.github.io/)
