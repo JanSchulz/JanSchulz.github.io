@@ -3,19 +3,19 @@
 
 title:   'A blog about technical stuff'
 author:  
-  name:  'Jan Schulz'
+  name:  'Jan Katins'
   # squared, 120px or 240px picture -> used as 120px
   picture: https://avatars2.githubusercontent.com/u/890156?v=3&s=240
-  twitter: janschulz
+  twitter: jankatins
   
  # Short bio or description (displayed in the header)
-description: BI Engineer @ kfzteile24.de | Python enthusiast (<a href="https://github.com/janschulz/knitpy">knitpy</a>, pandas, statsmodels, matplotlib, ggplot, <a href="https://github.com/bebraw/pypandoc/">pypandoc</a>) | PhD student @ TU Freiberg (bibliometrics, academic research productivity, social networks, social capital) | <a href="http://www.katzien.de">Private homepage (de)</a>
+description: BI Engineer @ kfzteile24.de | Python enthusiast (<a href="https://github.com/janschulz/knitpy">knitpy</a>, pandas, statsmodels, matplotlib, ggplot, <a href="https://github.com/bebraw/pypandoc/">pypandoc</a>) | PhD student @ TU Freiberg (bibliometrics, academic research productivity, social networks, social capital) | <a href="http://www.katzien.de">Private homepage (de) | formerly Jan Schulz</a>
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  github: janschulz
-  twitter: janschulz
-  linkedin: schulzjan
+  github: jankatins
+  twitter: jankatins
+  linkedin: jankatins
   email: jasc@gmx.net
   
 
@@ -23,7 +23,7 @@ footer-links:
 #  use site.path in your templates to make it work for both protocols e.g. http and https
 #  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
 path: ''
-url:  'http://janschulz.github.io'
+url:  'http://jankatins.github.io'
 
 
 ########
